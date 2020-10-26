@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
+import { withRouter } from 'react-router-dom';
 import Users from '../../components/users/Users';
 import { getUsers } from '../../modules/users';
 
@@ -18,5 +19,5 @@ const UsersContainer = () => {
 
   return <Users users={users} />;
 };
-
-export default UsersContainer;
+//withRouter를 통해서 웹상에 입력된 정보를 가져올수있다
+export default withRouter(UsersContainer);

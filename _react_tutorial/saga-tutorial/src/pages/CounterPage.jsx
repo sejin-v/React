@@ -1,8 +1,8 @@
-import React from 'react';
-import CounterContainer from '../containers/counter/CounterContainer';
+// import React from 'react';
+// import CounterContainer from '../containers/counter/CounterContainer';
 
-const CounterPage = () => {
-  // return <CounterContainer />;
-};
+// const CounterPage = () => {
+//   // return <CounterContainer />;
+// };
 
-export default CounterPage;
+// export default CounterPage;

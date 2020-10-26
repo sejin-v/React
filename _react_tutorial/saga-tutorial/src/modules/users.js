@@ -20,7 +20,7 @@ const getUsersFailure = (error) => ({
 });
 
 function* getUsersSaga() {
-  const response = yield call(() => axios.get('http://localhost:4000/users')); //http://적어줘야한다.
+  const response = yield call(() => axios.get('/users')); //http://적어줘야한다.
   try {
     yield put(getUsersSuccess(response.data));
   } catch (e) {
