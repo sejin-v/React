@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { withRouter } from 'react-router-dom';
 import LoginForm from '../../components/auth/LoginForm';
-import { changeField, login } from '../../modules/auth';
+import { changeField, initalField, login } from '../../modules/auth';
 
 const LoginFormComtainer = () => {
   const { form, auth, authError } = useSelector(({ auth }) => ({
@@ -17,6 +17,7 @@ const LoginFormComtainer = () => {
     e.preventDefault();
     dispatch(login(form));
     authError && setError('존재하지 않는 회원입니다.');
+    dispatch(initalField());
   };
 
   const onChange = (e) => {

@@ -19,12 +19,12 @@ export const initalField = () => ({
 
 export const login = (id) => ({
   type: LOGIN,
-  id,
+  payload: id,
 });
 
 function* loginSaga(action) {
   try {
-    const response = yield call(authAPI.login, action.id);
+    const response = yield call(() => authAPI.login(action.payload));
     yield put({
       type: LOGIN_SUCCESS,
       payload: response.data,
