@@ -1,0 +1,22 @@
+.a {
+  width: 150px;
+  height: 150px;
+  background-color: burlywood;
+  opacity: 0.3;
+}
+.b {
+  width: 100px;
+  height: 100px;
+  background-color: blanchedalmond;
+  position: absolute;
+  align-content: center;
+  flex-direction: column;
+}
+.c {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  opacity: 0;
+}
+div {
+}

@@ -11,7 +11,8 @@ const User = ({ id, name }) => {
 const Users = ({ users }) => {
   return (
     <ul>
-      {users && users.map((user) => <User id={user.id} name={user.name} />)}
+      {users && users.map((user) =>
+       <User id={user.id} name={user.name} />)}
     </ul>
     // 처음엔 users가 없을 터
   );
