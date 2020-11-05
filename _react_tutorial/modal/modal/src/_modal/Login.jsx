@@ -2,6 +2,8 @@ import React from 'react';
 import Modal from './Modal';
 
 const Login = () => {
+
+  
   return (
     <Modal mesg={'로그인'}>
       <input></input>
